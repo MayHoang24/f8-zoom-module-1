@@ -1,17 +1,7 @@
-/* =======Responsive======== */
-
-/* xl */
-@media (max-width: 1199.98px) {
-}
-
-/* lg */
 @media (max-width: 991.98px) {
+  .nav {
+    margin-right: 40px;
+  }
 }
 
-/* md */
-@media (max-width: 767.98px) {
-}
-
-/* sm */
-@media (max-width: 575.98px) {
-}
+/*# sourceMappingURL=responsive.css.map */

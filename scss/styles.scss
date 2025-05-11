@@ -44,3 +44,314 @@ textarea {
     font-size: inherit;
     font-family: inherit;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+$primary: #0E1412;
+$bg-btn: #FD6038;
+$primary-text-color: #586863;
+$secondary-text-color: #fff;
+
+//============= Common=============
+.container{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo{
+    display: inline-block;
+    width: 84px;
+    height: 67px;
+    object-fit: cover;
+}
+
+.sub-heading, .heading-desc{
+    color: $primary-text-color;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.sub-heading{
+    font-family: "Roboto Slab";
+}
+
+.heading{
+    color: $primary;
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.24;
+}
+
+.btn{
+    display: inline-block;
+    background: $bg-btn;
+    color: $secondary-text-color;
+    line-height: 60px;
+    text-align: center;
+    transition: background ease 0.4s;
+}
+
+.btn:hover{
+    background: #ca4a2a;
+}
+
+// =======Header========
+.header{
+    background: #F8EBC9;
+    min-height: 859px;
+    padding: 30px 0;
+
+    &__top{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav{
+        margin-left: auto;
+        margin-right: 93px;
+
+        &__list{
+            display: flex;
+        }
+
+        &__item{
+            position: relative;
+            transition: color ease 0.3s;
+            color: $primary;
+            line-height: 1.75;
+        }
+
+        &__item:not(:nth-child(4)){
+            margin-right: 10px;
+        }
+
+        &__item:not(:nth-child(4))::after {
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-left: 2px solid currentColor;
+            border-bottom: 2px solid currentColor;
+            top: 19px;
+            right: 5px;
+            rotate: -45deg;
+            border-radius: 1px;
+        }
+
+        .active, &__item:hover {
+            color: $bg-btn;
+        }
+
+        &__link{
+            display: inline-flex;
+            padding: 10px 20px;
+        }
+    }
+
+    &__phone{
+        color: $primary;
+        line-height: 1.75;
+
+        strong{
+        color: $primary;
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 1.45;
+        }
+    }
+
+    .hero{
+        margin-top: 154px;
+
+        &__sub-heading{
+            color: $primary;
+        }
+
+        &__heading{
+            margin-top: 12px;
+            font-size: 6rem;
+            font-weight: 800;
+            line-height: 1.17;
+        }
+
+        &__desc{
+            margin-top: 18px;
+            color: $primary;
+            max-width: 470px;
+        }
+
+        &__btn{
+            margin-top: 38px;
+            min-width: 242px;
+        }
+
+        &__thumb{
+            position: relative;
+            max-width: 470px;
+            max-height: 476px;
+            background: #017848;
+        }
+
+        &__thumb::before{
+            position: absolute;
+            content: "";
+            width: 30%;
+            height: 88.6%;
+            background: #FED464;
+            bottom: 0;
+            left: 0;
+        }
+
+        &__img{
+            position: relative;
+            display: block;
+            width: 70%;
+            height: 100%;
+            margin: 0 auto;
+
+            &-design-1{
+                position: absolute;
+                top: -92px;
+                left: -90px;
+            }
+
+            &-design-2{
+                position: absolute;
+                top: 111px;
+                right: -90px;
+            }
+        }
+    }
+}
+
+// =======About Us========
+.about{
+    padding: 100px 0;
+    background: $primary;
+
+    &__thumb{
+        position: relative;
+        max-width: 570px;
+        max-height: 570px;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &-design{
+            position: absolute;
+            right: -57px;
+            bottom: 110px;
+        }
+    }
+
+    &__content{
+        margin: 64px 0;
+    }
+
+    &__sub-heading{
+        color: $bg-btn;
+    }
+
+    &__heading{
+        color: $secondary-text-color;
+    }
+
+    &__desc{
+        margin-top: 18px;
+        color: #BECCC7;
+    }
+
+    &-quantity{
+        margin-top: 28px;
+        display: flex;
+        align-items: center;
+        gap: 55px;
+
+        strong{
+            color: $secondary-text-color;
+            font-family: "Roboto Slab";
+            font-size: 2.4rem;
+            font-weight: 700;
+            line-height: 1.42;
+        }
+
+        p{
+            margin-top: 4px;
+            color: #BECCC7;
+        }
+    }
+
+    &__btn{
+        margin-top: 38px;
+        min-width: 166px;
+    }
+}
+
+// =======Services========
+.services{
+    margin-top: 150px;
+
+    &__info{
+        text-align: center;
+    }
+
+    &__heading{
+        margin-top: 6px;
+    }
+
+    &__desc{
+        display: inline-block;
+        margin-top: 18px;
+        max-width: 470px;
+    }
+
+    &__list{
+        margin-top: 70px;
+    }
+
+    &__thumb{
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    &__item{
+        position: relative;
+        max-width: 370px;
+        max-height: 370px;
+
+        &-btn{
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        right: 20px;
+
+        background: $secondary-text-color;
+        color: $primary;
+
+
+        font-size: 2.2rem;
+        font-weight: 700;
+        transition: all ease 0.4s;
+    }
+    }
+
+    .active, &__item-btn:hover{
+        background: $bg-btn;
+        color: $secondary-text-color;
+    }
+
+    &__btn{
+        margin-top: 55px;
+        margin-left: 50%;
+        translate: -50%;
+        min-width: 136px;
+    }
+}

@@ -45,4 +45,263 @@ textarea {
   font-family: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.logo {
+  display: inline-block;
+  width: 84px;
+  height: 67px;
+  object-fit: cover;
+}
+
+.sub-heading, .heading-desc {
+  color: #586863;
+  font-size: 1.8rem;
+  line-height: 1.67;
+}
+
+.sub-heading {
+  font-family: "Roboto Slab";
+}
+
+.heading {
+  color: #0E1412;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.24;
+}
+
+.btn {
+  display: inline-block;
+  background: #FD6038;
+  color: #fff;
+  line-height: 60px;
+  text-align: center;
+  transition: background ease 0.4s;
+}
+
+.btn:hover {
+  background: #ca4a2a;
+}
+
+.header {
+  background: #F8EBC9;
+  min-height: 859px;
+  padding: 30px 0;
+}
+.header__top {
+  display: flex;
+  align-items: center;
+}
+.header .nav {
+  margin-left: auto;
+  margin-right: 93px;
+}
+.header .nav__list {
+  display: flex;
+}
+.header .nav__item {
+  position: relative;
+  transition: color ease 0.3s;
+  color: #0E1412;
+  line-height: 1.75;
+}
+.header .nav__item:not(:nth-child(4)) {
+  margin-right: 10px;
+}
+.header .nav__item:not(:nth-child(4))::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-left: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  top: 19px;
+  right: 5px;
+  rotate: -45deg;
+  border-radius: 1px;
+}
+.header .nav .active, .header .nav__item:hover {
+  color: #FD6038;
+}
+.header .nav__link {
+  display: inline-flex;
+  padding: 10px 20px;
+}
+.header__phone {
+  color: #0E1412;
+  line-height: 1.75;
+}
+.header__phone strong {
+  color: #0E1412;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+.header .hero {
+  margin-top: 154px;
+}
+.header .hero__sub-heading {
+  color: #0E1412;
+}
+.header .hero__heading {
+  margin-top: 12px;
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1.17;
+}
+.header .hero__desc {
+  margin-top: 18px;
+  color: #0E1412;
+  max-width: 470px;
+}
+.header .hero__btn {
+  margin-top: 38px;
+  min-width: 242px;
+}
+.header .hero__thumb {
+  position: relative;
+  max-width: 470px;
+  max-height: 476px;
+  background: #017848;
+}
+.header .hero__thumb::before {
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 88.6%;
+  background: #FED464;
+  bottom: 0;
+  left: 0;
+}
+.header .hero__img {
+  position: relative;
+  display: block;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+.header .hero__img-design-1 {
+  position: absolute;
+  top: -92px;
+  left: -90px;
+}
+.header .hero__img-design-2 {
+  position: absolute;
+  top: 111px;
+  right: -90px;
+}
+
+.about {
+  padding: 100px 0;
+  background: #0E1412;
+}
+.about__thumb {
+  position: relative;
+  max-width: 570px;
+  max-height: 570px;
+}
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__img-design {
+  position: absolute;
+  right: -57px;
+  bottom: 110px;
+}
+.about__content {
+  margin: 64px 0;
+}
+.about__sub-heading {
+  color: #FD6038;
+}
+.about__heading {
+  color: #fff;
+}
+.about__desc {
+  margin-top: 18px;
+  color: #BECCC7;
+}
+.about-quantity {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+.about-quantity strong {
+  color: #fff;
+  font-family: "Roboto Slab";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+.about-quantity p {
+  margin-top: 4px;
+  color: #BECCC7;
+}
+.about__btn {
+  margin-top: 38px;
+  min-width: 166px;
+}
+
+.services {
+  margin-top: 150px;
+}
+.services__info {
+  text-align: center;
+}
+.services__heading {
+  margin-top: 6px;
+}
+.services__desc {
+  display: inline-block;
+  margin-top: 18px;
+  max-width: 470px;
+}
+.services__list {
+  margin-top: 70px;
+}
+.services__thumb {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.services__item {
+  position: relative;
+  max-width: 370px;
+  max-height: 370px;
+}
+.services__item-btn {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  color: #0E1412;
+  font-size: 2.2rem;
+  font-weight: 700;
+  transition: all ease 0.4s;
+}
+.services .active, .services__item-btn:hover {
+  background: #FD6038;
+  color: #fff;
+}
+.services__btn {
+  margin-top: 55px;
+  margin-left: 50%;
+  translate: -50%;
+  min-width: 136px;
+}
+
 /*# sourceMappingURL=styles.css.map */
