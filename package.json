@@ -1,0 +1,8 @@
+{
+  "name": "sass-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "sass ./scss/styles.scss ./assets/css/styles.css --watch"
+  }
+}
+
